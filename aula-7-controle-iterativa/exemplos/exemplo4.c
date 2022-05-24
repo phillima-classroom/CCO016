@@ -11,7 +11,7 @@ int main(){
     cont = 1;
     
     //enquanto
-    while(pow(cont,5) < 10000){
+    while(pow(5,cont) < 10000){
         cont++; 
     }
 
