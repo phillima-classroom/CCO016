@@ -5,9 +5,7 @@ int main(){
  
     //Processamento
     int cont;
-    //Variavel de saida
-    int potencia;
-
+ 
     cont = 1;
     
     //enquanto
