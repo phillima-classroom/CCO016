@@ -10,7 +10,7 @@ int main(){
     char campoMinado[n][n];
     int x = (rand()%n);
     int y = (rand()%n);
-
+    printf("Bomba %d %d\n",x,y);
     for(int i = 0; i < n; i++)
         for(int  j = 0; j < n; j++)
             campoMinado[i][j] = '-';
@@ -51,7 +51,11 @@ int main(){
                 for(int  j = 0; j < n; j++){
                     printf("%c ",campoMinado[i][j]);
                     if(campoMinado[i][j]=='-'){
-                        limpouCampo=0;
+                        if(i==x && j==y){
+                            continue;
+                        }else{
+                            limpouCampo=0;
+                        }
                     }
                 }
                 puts("");
